@@ -3,7 +3,7 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name           = 'react-native-yz-vlcplayer'
+  s.name           = 'react-native-sl-vlcplayer'
   s.version        = package['version']
   s.summary        = package['description']
   s.description    = package['description']
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.dependency "React"
 
-  s.dependency "RCTVLCPlayer", '2.6.0'
+  s.dependency "RCTVLCPlayer"
 
   s.default_subspec = "RCTVLCPlayer"
 end
